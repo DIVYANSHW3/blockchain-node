@@ -1,1 +1,10 @@
-
+{
+  "name": "Blockchain Node",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/go:1": {}
+  },
+  "forwardPorts": [8545, 30303],
+  "postCreateCommand": "sudo apt update && sudo apt install -y geth"
+}
